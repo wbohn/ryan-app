@@ -41,6 +41,30 @@ const router = createBrowserRouter([
     path: "/emily",
     element: <Gump />,
   },
+  {
+    path: "/ryan",
+    element: <Gump />,
+  },
+  {
+    path: "/brandi",
+    element: <Gump />,
+  },
+  {
+    path: "/mom",
+    element: <Gump />,
+  },
+  {
+    path: "/sara",
+    element: <Gump />,
+  },
+  {
+    path: "lucy",
+    element: <Gump />,
+  },
+  {
+    path: "penny",
+    element: <Gump />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
