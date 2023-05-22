@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Jonas } from "./routes/Jonas";
+import { Ed } from "./routes/Ed";
+import { Carol } from "./routes/Carol";
 
 function Main() {
   return (
@@ -38,23 +41,23 @@ const router = createBrowserRouter([
     element: <Main />,
   },
   {
-    path: "/emily",
+    path: "emily",
     element: <Gump />,
   },
   {
-    path: "/ryan",
+    path: "ryan",
     element: <Gump />,
   },
   {
-    path: "/brandi",
+    path: "brandi",
     element: <Gump />,
   },
   {
-    path: "/mom",
+    path: "mom",
     element: <Gump />,
   },
   {
-    path: "/sara",
+    path: "sara",
     element: <Gump />,
   },
   {
@@ -64,6 +67,18 @@ const router = createBrowserRouter([
   {
     path: "penny",
     element: <Gump />,
+  },
+  {
+    path: "jonas",
+    element: <Jonas />,
+  },
+  {
+    path: "ed",
+    element: <Ed />,
+  },
+  {
+    path: "carol",
+    element: <Carol />,
   },
 ]);
 
