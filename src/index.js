@@ -23,7 +23,7 @@ function Gump() {
     <div className="App">
       <header className="App-header">
         <img
-          src={process.env.PUBLIC_URL + "/gump.jfif"}
+          src={process.env.PUBLIC_URL + "/gump.gif"}
           className="App-logo"
           alt="gump"
         />
