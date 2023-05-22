@@ -1,13 +1,52 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+function Main() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img
+          src={process.env.PUBLIC_URL + "/tat.jpg"}
+          className="App-logo"
+          alt="tat"
+        />
+      </header>
+    </div>
+  );
+}
+
+function Gump() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img
+          src={process.env.PUBLIC_URL + "/gump.gif"}
+          className="App-logo"
+          alt="gump"
+        />
+      </header>
+    </div>
+  );
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main />,
+  },
+  {
+    path: "/emily",
+    element: <Gump />,
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
