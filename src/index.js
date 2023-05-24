@@ -82,10 +82,6 @@ const router = createBrowserRouter([
     path: "carol",
     element: <Carol />,
   },
-  {
-    path: "draftless",
-    element: <Draftless />,
-  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
