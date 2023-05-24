@@ -3,9 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Emily } from "./routes/Emily";
 import { Jonas } from "./routes/Jonas";
 import { Ed } from "./routes/Ed";
 import { Carol } from "./routes/Carol";
+import { Draftless } from "./routes/Draftless";
 
 function Main() {
   return (
@@ -42,7 +44,7 @@ const router = createBrowserRouter([
   },
   {
     path: "emily",
-    element: <Gump />,
+    element: <Emily />,
   },
   {
     path: "ryan",
@@ -79,6 +81,10 @@ const router = createBrowserRouter([
   {
     path: "carol",
     element: <Carol />,
+  },
+  {
+    path: "draftless",
+    element: <Draftless />,
   },
 ]);
 
