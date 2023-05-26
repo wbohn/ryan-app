@@ -43,6 +43,10 @@ const router = createBrowserRouter([
     element: <Main />,
   },
   {
+    path: "draftless",
+    element: <Draftless />,
+  },
+  {
     path: "emily",
     element: <Emily />,
   },

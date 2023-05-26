@@ -1,8 +1,14 @@
+import "../App.css";
+
 export function Emily() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={process.env.PUBLIC_URL + "/emily-lepew.jfif"} alt="mauh" />
+        <img
+          className="App-logo"
+          src={process.env.PUBLIC_URL + "/emily-lepew.jfif"}
+          alt="muah"
+        />
       </header>
     </div>
   );
