@@ -6,7 +6,7 @@ export function Emily() {
       <header className="App-header">
         <img
           className="App-logo"
-          src={process.env.PUBLIC_URL + "/emily-lepew.jfif"}
+          src={process.env.PUBLIC_URL + "/Maine.jpg"}
           alt="muah"
         />
       </header>
