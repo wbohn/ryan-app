@@ -1,7 +1,7 @@
 import "../App.css";
 
 export function Draftless() {
-  const poem = `draftless:\n\tdraft thoughts, swap sentence orders\n\t\tscope grows\n\tdrift together\n\t\tdraftless again`;
+  const poem = `draftless:\n\tdraft thoughts\n\t\tscope grows\n\tdrift together\n\t\tdraftless again`;
 
   return (
     <div
