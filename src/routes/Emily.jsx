@@ -1,14 +1,11 @@
+import { Link } from "react-router-dom";
 import "../App.css";
 
 export function Emily() {
   return (
     <div className="App">
       <header className="App-header">
-        <img
-          className="App-logo"
-          src={process.env.PUBLIC_URL + "/Maine.jpg"}
-          alt="muah"
-        />
+        <Link to="/cricket">/cricket</Link>
       </header>
     </div>
   );
