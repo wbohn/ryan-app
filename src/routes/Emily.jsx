@@ -1,12 +1,22 @@
-import { Link } from "react-router-dom";
 import "../App.css";
 
 export function Emily() {
+  const poem = `while True: \n\t# (always)\n\ti love you`;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Link to="/cricket">/cricket</Link>
-      </header>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
+      <div>
+        <p style={{ whiteSpace: "pre", fontSize: "calc(10px + 2vmin)" }}>
+          {poem}
+        </p>
+      </div>
     </div>
   );
 }

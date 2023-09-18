@@ -8,7 +8,8 @@ import { Jonas } from "./routes/Jonas";
 import { Ed } from "./routes/Ed";
 import { Carol } from "./routes/Carol";
 import { Draftless } from "./routes/Draftless";
-import { Cricket, Silence } from "./routes/Cricket";
+import { Cricket } from "./routes/Cricket";
+import { Birthday } from "./routes/Birthday";
 
 function Main() {
   return (
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
   {
     path: "cricket",
     element: <Cricket />,
+  },
+  {
+    path: "birthday",
+    element: <Birthday />,
   },
 ]);
 
